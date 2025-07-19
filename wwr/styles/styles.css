@@ -1,0 +1,20 @@
+:root {
+--heading-background-color: rgb(244, 60, 50);
+--heading-text-color: #33ca95;
+--heading-font: 'Montserrat', Helvetica, sans-serif;
+--padding: 1rem;
+--border: 1px solid rgba(60, 55, 60, 0.1);
+}
+
+h1 {
+  background-color: var(--heading-background-color);
+  color: var(--heading-text-color);
+  font-family: 'Merriweather', serif;
+  padding: var(--padding);
+}
+
+aside {
+    margin: 10px auto;
+    padding: var(--padding);
+    box-shadow: 0 0 10px rgba(131, 120, 120, 0.1);
+}
