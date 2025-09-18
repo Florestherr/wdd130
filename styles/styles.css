@@ -1,12 +1,21 @@
+:root {
+    --heading-background-color: #f06;
+    --heading-text-color: #333;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--heading-background-color);
+    padding: var(--padding);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--padding);
 }
 
 main {
@@ -20,22 +29,21 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
+    border: var(--border);
+    padding: var(--padding);
     box-shadow: 0 0 30px gray;
 }
 
 p {
-    padding: 0;
+    padding: var(--padding);
 }
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 0.2);
-    /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
+    border: var(--border);
+    padding: var(var(--padding));
+    background-color: var(--heading-background-color);
     color: #333;
     text-align: center;
 }
