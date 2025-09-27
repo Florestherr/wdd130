@@ -39,7 +39,7 @@ header {
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 10;
+    padding: 5;
 
 }
 
@@ -52,7 +52,7 @@ header {
 
 
 .Logo ul li {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 /* Correct the anchor tag issue in your HTML (it should be <a> inside <li>) */
@@ -175,13 +175,9 @@ ADVENTURE SECTION LAYOUT STYLES (Confirmed Horizontal)
 */
 
 .adventure-images {
-    /* 1. Make the container a flexbox */
     display: flex;
-    /* 2. Space out the items evenly */
-    justify-content: space-between;
-    /* 3. Ensure they stay on one line */
-    flex-wrap: nowrap;
-    /* Add margin/padding for visual spacing */
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 10px 0;
     margin: 0;
 }
