@@ -28,9 +28,9 @@ header {
     background-color: rgb(100, 158, 197);
     color: var(--accent2-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
-    padding: 10px 0;
+    padding: 100px 0;
     flex: 1 1 100%;
     flex-direction: row;
 }
