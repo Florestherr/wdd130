@@ -24,7 +24,7 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-header {
+head {
     background-color: rgb(100, 158, 197);
     color: var(--accent2-color);
 }
@@ -74,13 +74,6 @@ footer {
     height: auto;
 }
 
-/* ... (Existing CSS code) ... */
-
-/* ================================
-HISTORY SECTION LAYOUT STYLES
-================================
-*/
-
 .history {
     /* 1. Make the section a grid container */
     display: grid;
@@ -109,19 +102,11 @@ HISTORY SECTION LAYOUT STYLES
     overflow: hidden;
 }
 
-/* ================================
-ADVENTURE SECTION LAYOUT STYLES
-================================
-*/
-
 .adventure-images {
-    /* 1. Make the container a flexbox */
     display: flex;
-    /* 2. Space out the items evenly */
     justify-content: space-between;
-    /* 3. Allow images to shrink if needed */
     flex-wrap: nowrap;
-    /* Remove padding/margin inherited from section/nav/p for a tighter layout */
+    flex-direction: row-reverse;
     padding: 0;
     margin: 0;
 }
@@ -132,8 +117,6 @@ ADVENTURE SECTION LAYOUT STYLES
     height: auto;
     display: flex;
     object-fit: cover;
-    justify-content: space-between;
-    flex-direction: row;
 }
 
 .adventure-section h2 {
