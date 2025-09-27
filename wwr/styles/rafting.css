@@ -74,6 +74,74 @@ footer {
     height: auto;
 }
 
+/* ... (Existing CSS code) ... */
+
+/* ================================
+HISTORY SECTION LAYOUT STYLES
+================================
+*/
+
+.history {
+    /* 1. Make the section a grid container */
+    display: grid;
+    /* 2. Define two columns: 1 part for the content, 1 part for the image */
+    grid-template-columns: 1fr 1fr;
+    /* 3. Vertically align items in the center of the row */
+    align-items: center;
+    /* 4. Add space between the grid items (columns) */
+    gap: 20px;
+    /* 5. Remove the default section margin/padding for a cleaner look if the content is full width */
+    margin: 0;
+    padding: 40px 16px;
+}
+
+.history-image {
+    /* Ensure the image fills its grid cell */
+    width: 100%;
+    height: auto;
+    /* Center the image within its container if it doesn't take up 100% */
+    display: block;
+}
+
+.history-content {
+    /* Inherits styling from section/p/nav styles but can be targeted for specific alignment */
+    /* Remove any floating applied globally or inherited */
+    overflow: hidden;
+}
+
+/* ================================
+ADVENTURE SECTION LAYOUT STYLES
+================================
+*/
+
+.adventure-images {
+    /* 1. Make the container a flexbox */
+    display: flex;
+    /* 2. Space out the items evenly */
+    justify-content: space-between;
+    /* 3. Allow images to shrink if needed */
+    flex-wrap: nowrap;
+    /* Remove padding/margin inherited from section/nav/p for a tighter layout */
+    padding: 0;
+    margin: 0;
+}
+
+.adventure-images img {
+    /* 4. Give each image equal space (1/5th of the container) */
+    width: 20%;
+    /* Maintain aspect ratio */
+    height: auto;
+    /* Ensure the images are treated as blocks */
+    display: block;
+    /* Optional: Ensure images cover their 20% width without stretching */
+    object-fit: cover;
+}
+
+.adventure-section h2 {
+    /* Center the heading above the images */
+    text-align: center;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
