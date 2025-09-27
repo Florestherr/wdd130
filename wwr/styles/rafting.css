@@ -24,10 +24,61 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-head {
+header {
     background-color: rgb(100, 158, 197);
     color: var(--accent2-color);
+    /* 1. FLEXBOX FOR HEADER CONTENT */
+    display: flex;
+    justify-content: space-between;
+    /* Pushes the Logo and Nav to opposite sides */
+    align-items: center;
+    /* Vertically centers the logo and nav items */
+    padding: 10px 0;
+    /* Add vertical padding */
 }
+
+/* 1.1. STYLE THE LOGO CONTAINER TO BE HORIZONTAL */
+.Logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    /* Override default margin */
+    padding: 0;
+    /* Override default padding */
+}
+
+/* 1.2. STYLE THE LIST ITEMS TO BE HORIZONTAL */
+.Logo ul {
+    display: flex;
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Override default margin */
+    padding: 0;
+    /* Override default padding */
+}
+
+/* 1.3. STYLE THE INDIVIDUAL LIST ITEMS */
+.Logo ul li {
+    margin-left: 20px;
+    /* Space between navigation links */
+}
+
+/* Correct the anchor tag issue in your HTML (it should be <a> inside <li>) */
+.Logo ul li a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    padding: 5px 10px;
+}
+
+.Logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/* END HEADER CORRECTIONS */
+
 
 * {
     margin: 0;
@@ -40,71 +91,11 @@ body {
     color: var(--accent1-color);
 }
 
-nav li {
-    display: inline-flex;
-    justify-content: flex-end;
-    align-content: space-around;
-    list-style-type: none;
-}
-
 header,
 main,
 footer {
     width: 840px;
     margin: 0 auto;
-}
-
-.history {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    gap: 20px;
-    padding: 40px;
-}
-
-.history-image {
-    width: 100%;
-    height: auto;
-}
-
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px;
-    margin: 0;
-    padding: 40px 16px;
-}
-
-.history-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.history-content {
-    overflow: hidden;
-}
-
-.adventure-images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-}
-
-.adventure-images img {
-    width: 20%;
-    height: auto;
-    display: flex;
-    object-fit: cover;
-}
-
-.adventure-section h2 {
-    text-align: center;
-    display: inline;
 }
 
 h1,
@@ -113,7 +104,7 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
+/* Removing margin and padding from nav for layout control, but keeping for other elements */
 p,
 section,
 article {
@@ -135,7 +126,6 @@ article {
     height: auto;
 }
 
-
 h1 {
     position: absolute;
     top: 20px;
@@ -151,4 +141,72 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+/* ================================
+HISTORY SECTION LAYOUT STYLES
+================================
+*/
+
+.history {
+    /* 1. Make the section a grid container */
+    display: grid;
+    /* 2. Define two columns: 1 part for the content, 1 part for the image */
+    grid-template-columns: 1fr 1fr;
+    /* 3. Vertically align items in the center of the row */
+    align-items: center;
+    /* 4. Add space between the grid items (columns) */
+    gap: 20px;
+    /* 5. Override default section margin/padding for better control */
+    margin: 0;
+    padding: 40px 16px;
+}
+
+.history-image {
+    /* Ensure the image fills its grid cell */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.history-content {
+    /* Remove any floating applied globally or inherited */
+    overflow: hidden;
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+/* ================================
+ADVENTURE SECTION LAYOUT STYLES (Confirmed Horizontal)
+================================
+*/
+
+.adventure-images {
+    /* 1. Make the container a flexbox */
+    display: flex;
+    /* 2. Space out the items evenly */
+    justify-content: space-between;
+    /* 3. Ensure they stay on one line */
+    flex-wrap: nowrap;
+    /* Remove padding/margin inherited from section/nav/p for a tighter layout */
+    padding: 0;
+    margin: 0;
+}
+
+.adventure-images img {
+    /* 4. Give each image equal space (1/5th of the container) */
+    width: 20%;
+    /* Maintain aspect ratio */
+    height: auto;
+    /* Ensure the images are treated as blocks */
+    display: block;
+    /* Optional: Ensure images cover their 20% width without stretching */
+    object-fit: cover;
+}
+
+.adventure-section h2 {
+    /* Center the heading above the images */
+    text-align: center;
 }
