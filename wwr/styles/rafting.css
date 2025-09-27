@@ -190,14 +190,15 @@ ADVENTURE SECTION LAYOUT STYLES (Confirmed Horizontal)
     justify-content: space-between;
     /* 3. Ensure they stay on one line */
     flex-wrap: nowrap;
-    /* Remove padding/margin inherited from section/nav/p for a tighter layout */
-    padding: 0;
+    /* Add margin/padding for visual spacing */
+    padding: 10px 0;
     margin: 0;
 }
 
 .adventure-images img {
     /* 4. Give each image equal space (1/5th of the container) */
-    width: 20%;
+    width: 19%;
+    /* Use 19% or less to leave a tiny gap without using the 'gap' property */
     /* Maintain aspect ratio */
     height: auto;
     /* Ensure the images are treated as blocks */
@@ -209,4 +210,10 @@ ADVENTURE SECTION LAYOUT STYLES (Confirmed Horizontal)
 .adventure-section h2 {
     /* Center the heading above the images */
     text-align: center;
+}
+
+.adventure-caption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
 }
