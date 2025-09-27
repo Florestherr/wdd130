@@ -1,3 +1,16 @@
+.grid {
+    background-color: #abb;
+    display: grid;
+    place-items: center;
+}
+
+.flex {
+    background-color: #aba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 :root {
     --primary-color: #055a05;
     /* forest green */
@@ -27,11 +40,38 @@ body {
     color: var(--accent1-color);
 }
 
+nav li {
+    flex: 1 1 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: space-around;
+}
+
 header,
 main,
 footer {
     width: 840px;
     margin: 0 auto;
+}
+
+.history {
+    /* Make the section a grid container */
+    display: grid;
+    /* Create two columns: one for the image, one for the text */
+    grid-template-columns: 1fr 2fr;
+    /* Example: 1 part for image, 2 parts for content */
+    /* Align items vertically in the center */
+    align-items: center;
+    /* Add some space between the columns */
+    gap: 20px;
+    /* Add padding for overall section spacing */
+    padding: 40px;
+}
+
+.history-image {
+    /* Ensure the image fits within its grid cell */
+    width: 100%;
+    height: auto;
 }
 
 h1,
@@ -61,6 +101,7 @@ article {
     width: 100%;
     height: auto;
 }
+
 
 h1 {
     position: absolute;
