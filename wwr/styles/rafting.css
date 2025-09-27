@@ -27,14 +27,12 @@
 header {
     background-color: rgb(100, 158, 197);
     color: var(--accent2-color);
-    /* 1. FLEXBOX FOR HEADER CONTENT */
     display: flex;
     justify-content: space-between;
-    /* Pushes the Logo and Nav to opposite sides */
-    align-items: center;
-    /* Vertically centers the logo and nav items */
+    align-items: stretch;
     padding: 10px 0;
-    /* Add vertical padding */
+    flex: 1 1 100%;
+    flex-direction: row;
 }
 
 /* 1.1. STYLE THE LOGO CONTAINER TO BE HORIZONTAL */
@@ -210,6 +208,8 @@ ADVENTURE SECTION LAYOUT STYLES (Confirmed Horizontal)
 .adventure-section h2 {
     /* Center the heading above the images */
     text-align: center;
+    justify-content: space-between;
+    display: flex;
 }
 
 .adventure-caption {
