@@ -201,7 +201,7 @@ ADVENTURE SECTION LAYOUT STYLES (Confirmed Horizontal)
 .adventure-section h2 {
     /* Center the heading above the images */
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
 }
 
