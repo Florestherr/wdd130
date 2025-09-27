@@ -41,11 +41,10 @@ body {
 }
 
 nav li {
-    flex: 1 1 100%;
     display: inline-flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: flex-end;
     align-content: space-around;
+    list-style-type: none;
 }
 
 header,
@@ -56,64 +55,47 @@ footer {
 }
 
 .history {
-    /* Make the section a grid container */
     display: grid;
-    /* Create two columns: one for the image, one for the text */
     grid-template-columns: 1fr 2fr;
-    /* Example: 1 part for image, 2 parts for content */
-    /* Align items vertically in the center */
     align-items: center;
-    /* Add some space between the columns */
     gap: 20px;
-    /* Add padding for overall section spacing */
     padding: 40px;
 }
 
 .history-image {
-    /* Ensure the image fits within its grid cell */
     width: 100%;
     height: auto;
 }
 
 .history {
-    /* 1. Make the section a grid container */
     display: grid;
-    /* 2. Define two columns: 1 part for the content, 1 part for the image */
     grid-template-columns: 1fr 1fr;
-    /* 3. Vertically align items in the center of the row */
     align-items: center;
-    /* 4. Add space between the grid items (columns) */
     gap: 20px;
-    /* 5. Remove the default section margin/padding for a cleaner look if the content is full width */
     margin: 0;
     padding: 40px 16px;
 }
 
 .history-image {
-    /* Ensure the image fills its grid cell */
     width: 100%;
     height: auto;
-    /* Center the image within its container if it doesn't take up 100% */
     display: block;
 }
 
 .history-content {
-    /* Inherits styling from section/p/nav styles but can be targeted for specific alignment */
-    /* Remove any floating applied globally or inherited */
     overflow: hidden;
 }
 
 .adventure-images {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
-    flex-direction: row-reverse;
+    flex-direction: row;
     padding: 0;
     margin: 0;
 }
 
 .adventure-images img {
-    /* 4. Give each image equal space (1/5th of the container) */
     width: 20%;
     height: auto;
     display: flex;
@@ -121,8 +103,8 @@ footer {
 }
 
 .adventure-section h2 {
-    /* Center the heading above the images */
     text-align: center;
+    display: inline;
 }
 
 h1,
