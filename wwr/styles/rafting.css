@@ -129,12 +129,11 @@ ADVENTURE SECTION LAYOUT STYLES
 .adventure-images img {
     /* 4. Give each image equal space (1/5th of the container) */
     width: 20%;
-    /* Maintain aspect ratio */
     height: auto;
-    /* Ensure the images are treated as blocks */
-    display: block;
-    /* Optional: Ensure images cover their 20% width without stretching */
+    display: flex;
     object-fit: cover;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .adventure-section h2 {
