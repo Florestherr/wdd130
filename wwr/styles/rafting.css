@@ -42,6 +42,7 @@ body {
 
 nav li {
     flex: 1 1 100%;
+    display: inline-flex;
     justify-content: space-around;
     align-items: flex-end;
     align-content: space-around;
