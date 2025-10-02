@@ -55,7 +55,6 @@ header {
     margin-left: 10px;
 }
 
-/* Correct the anchor tag issue in your HTML (it should be <a> inside <li>) */
 .Logo ul li a {
     text-decoration: none;
     color: var(--accent2-color);
