@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Contact Rafting Time Company with any questions, reservation inquiries, or website suggestions. We are here to serve you!">
+        content="Rafting Time Company with any questions, reservation inquiries, or website suggestions. We are here to serve you!">
     <meta name="author" content="Flor Esther Romero Rueda">
     <title> Rafting Time Company | Contact </title>
     <link rel="stylesheet" href="styles/rafting.css">
@@ -23,83 +23,49 @@
     </header>
 
     <main>
-        <section class="company-info-and-map">
-            <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street</p>
-            <p>Kolob, California</p>
-            <p>Phone: +1 999 999 9999</p>
-            <p>Email: info@whitewater.com</p>
+        <div class="hero">
+            <img src="images/hero_transparency.jpg" alt="People in a rafting boat">
+            <h1>Rafting Time Company</h1>
+            <a href="trips.html" class="cta-button">¡Reserve your aventure</a>
+        </div>
 
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98196.2140510458!2d-73.31171168982912!3d6.6131080908825135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e69cf9787aacecd%3A0x4ab3102fffc8e6e!2sR%C3%ADo%20Suarez!5e0!3m2!1ses!2sco!4v1759974560730!5m2!1ses!2sco"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="cta-grid">
+            <div class="cta-box">
+                <h2>¿Are you new?</h2>
+                <p>Our adventures are perfect for new people. We have high-quality equipment and certificate guides.</p>
+                <a href="trips.html" class="button">See Trips</a>
+            </div>
+            <div class="cta-box">
+                <h2>Explore Our Trips</h2>
+                <p>We offer full-day trips and multi-day expeditions. From gentle rapids to extreme challenges, we have
+                    the ideal adventure for you.</p>
+                <a href="trips.html" class="button">Travel details</a>
             </div>
         </section>
 
-        <hr>
-
-        <section class="contact-form-section">
-            <h2>Send Us a Message</h2>
-
-            <form action="submit_form.php" method="post">
-                <fieldset>
-                    <label for="user_name">Name:</label>
-                    <input type="text" id="user_name" name="user_name" placeholder="Placeholder" required>
-                </fieldset>
-
-                <fieldset>
-                    <label for="user_email">Email:</label>
-                    <input type="email" id="user_email" name="user_email" placeholder="Placeholder" required>
-                </fieldset>
-
-                <fieldset class="radio-group">
-                    <legend>Message Purpose:</legend>
-                    <input type="radio" id="general_inquiry" name="message_purpose" value="general" required>
-                    <label for="general_inquiry">General Inquiry</label><br>
-
-                    <input type="radio" id="reservation_question" name="message_purpose" value="reservation">
-                    <label for="reservation_question">Reservation Question</label><br>
-
-                    <input type="radio" id="website_suggestion" name="message_purpose" value="suggestion">
-                    <label for="website_suggestion">Website Suggestion</label>
-                </fieldset>
-
-                <fieldset>
-                    <label for="user_message">Message:</label>
-                    <textarea id="user_message" name="user_message" rows="5" placeholder="Type here..."></textarea>
-                </fieldset>
-
-                <fieldset>
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                </fieldset>
-
-                <fieldset>
-                    <button type="submit">Get in Touch!</button>
-                </fieldset>
-            </form>
+        <section class="newsletter-signup">
+            <h2>subscribe to our newsletter</h2>
+            <form action="submit_newsletter.php" method="post">
+                <input type="text" name="name" placeholder="Your name">
+                <input type="email" name="email" placeholder="Your email">
+                <button type="submit">Susbcribe</button>
+                <form>
         </section>
 
-        <hr>
-
-        <section class="employee-profiles">
-            <h2>We Are Here to Serve You</h2>
-            <div class="employee-grid">
-                <figure>
-                    <img src="images/manager3.jpg" alt="Photo of the Main Manager">
-                    <figcaption>Main Manager (Job Title)</figcaption>
+        <section class="featured-adventures">
+            <h2>Featured Adventures</h2>
+            <div class="adventure-cards">
+                <figure class="card">
+                    <img src="images/awhitewater.jpg" alt="rapids in the river">
+                    <figcaption>Savage Nort river</figcaption>
+                    <p>3 days | Extreme challenge</p>
+                    <a href="trips.html">More Information</a>
                 </figure>
-
-                <figure>
-                    <img src="images/manager2.jpg" alt="Photo of the Engineer">
-                    <figcaption>Lead Engineer (Job Title)</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/manager1.jpg" alt="Photo of the Social Media Specialist">
-                    <figcaption>Social Specialist (Job Title)</figcaption>
+                <figure class="card">
+                    <img src="images/arapids.jpg" alt="rafting in a forest">
+                    <figcaption>Hidden forest</figcaption>
+                    <p>1 Day | Family Friendly</p>
+                    <a href="trips.html">More Information</a>
                 </figure>
             </div>
         </section>
